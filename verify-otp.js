@@ -3,7 +3,7 @@ const SendOtp = require('sendotp');
 const sendOtp = new SendOtp(process.env.MSG91_AUTH_KEY,
   "Hi, your OTP is {{otp}}, please don't share it with ANYBODY!");
 
-const contactNumber = "9500388071";
+const contactNumber = process.env.MY_MOBILE_NUMBER;
 
 const otp = "3764"; // OTP given by the user in the UI
 
